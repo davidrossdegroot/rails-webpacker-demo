@@ -1,0 +1,70 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+*/
+
+// -------------------------------------
+// Import individual theme settings
+
+@import "uswds-theme-general";
+@import "uswds-theme-typography";
+@import "uswds-theme-spacing";
+@import "uswds-theme-color";
+@import "uswds-theme-utilities";
+
+// components import needs to be last
+@import "uswds-theme-components";
+
+// -------------------------------------
+// Import individual USWDS packages...
+// See https://designsystem.digital.gov/components/
+
+// First import required and global packages...
+@import '../../../node_modules/uswds/dist/scss/packages/required';
+
+// Then import individual component packages...
+
+// @import '../../../node_modules/uswds/dist/scss/packages/form-controls';
+// @import '../../../node_modules/uswds/dist/scss/packages/form-templates';
+@import '../../../node_modules/uswds/dist/scss/packages/layout-grid';
+@import '../../../node_modules/uswds/dist/scss/packages/usa-card';
+@import '../../../node_modules/uswds/dist/scss/packages/typography';
+@import '../../../node_modules/uswds/dist/scss/packages/validation';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-accordion';
+@import '../../../node_modules/uswds/dist/scss/packages/usa-alert';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-banner';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-button';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-checklist';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-footer';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-header';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-hero';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-media-block';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-megamenu';
+@import '../../../node_modules/uswds/dist/scss/packages/usa-nav-container';
+@import '../../../node_modules/uswds/dist/scss/packages/usa-nav';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-navbar';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-search';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-sidenav';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-skipnav';
+@import '../../../node_modules/uswds/dist/scss/packages/usa-tooltip';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-table';
+// @import '../../../node_modules/uswds/dist/scss/packages/usa-tag';
+
+// or package sets...
+// @import 'packages/uswds-components';
+@import '../../../node_modules/uswds/dist/scss/packages/uswds-utilities';
+
+// -------------------------------------
+// ...or import the complete USWDS kit
+
+// @import "uswds";
+
+// -------------------------------------
+// Import theme custom styles
+
+@import "uswds-theme-custom-styles";

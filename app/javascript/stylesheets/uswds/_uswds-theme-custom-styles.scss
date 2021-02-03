@@ -1,0 +1,42 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
+@mixin at-font-face($display-name, $file-path, $font-weight, $font-style) {
+   $file-path: unquote($file-path);
+
+   // remove leading directory for rails #font-url
+   $rails-font-path: str-slice($file-path, 9);
+
+   // TODO: If $theme-use-rails-pipeline use font-url() statements
+   // instead of url()
+   // Dunno why I can't do this without an error...
+ 
+   @font-face {
+     font-family: unquote($display-name);
+     font-style: unquote($font-style);
+     font-weight: $font-weight;
+     font-display: fallback;
+     src: font-url('#{$rails-font-path}.woff2') format("woff2"),
+      font-url('#{$rails-font-path}.woff') format("woff"),
+      font-url('#{$rails-font-path}.ttf') format("truetype");
+   }
+ }
+ @import '../../../node_modules/uswds/dist/scss/global/font-face';
