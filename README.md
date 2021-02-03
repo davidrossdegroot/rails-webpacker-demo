@@ -1,24 +1,11 @@
-# README
+## Open 2 terminals
+### Webpacker dev server for local development
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```sh
+bin/webpack-dev-server --colors --watch   
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Start rails server
+```sh
+rails s
+```
