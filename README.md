@@ -9,3 +9,5 @@ bin/webpack-dev-server --colors --watch
 ```sh
 rails s
 ```
+
+![hmr-webpacker mov](https://user-images.githubusercontent.com/817050/106757104-f830a180-65fd-11eb-9b88-781efba73e7b.gif)
