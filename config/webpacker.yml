@@ -44,6 +44,8 @@ default: &default
     - .module.css
     - .png
     - .svg
+    - .tsx
+    - .ts
     - .gif
     - .jpeg
     - .jpg

@@ -10,8 +10,21 @@ require("channels")
 import "../stylesheets/application"
 
 import "bootstrap"
+import * as ReactDOM from "react-dom"
+import * as React   from 'react'
 
-document.addEventListener()
+const WeirdComponent: React.FunctionComponent = () => {
+    return (
+        <div>This is a fun React Component</div>
+    )
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    ReactDOM.render(
+      <WeirdComponent />,
+      document.getElementById('header')
+    )
+  })
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
