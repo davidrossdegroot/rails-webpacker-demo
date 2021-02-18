@@ -15,7 +15,7 @@ import * as React   from 'react'
 
 const WeirdComponent: React.FunctionComponent = () => {
     return (
-        <div>This is a fun React Component</div>
+        <h1>This is a React Component</h1>
     )
 }
 
